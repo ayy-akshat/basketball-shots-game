@@ -315,7 +315,7 @@ function resetGame()
 
 async function setBg()
 {
-  var request = await fetch('http://worldtimeapi.org/api/ip');
+  var request = await fetch('https://worldtimeapi.org/api/ip');
   var jsonContent = await request.json();
 
   var hour = parseFloat(jsonContent.datetime.slice(11, 13));
